@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="Cadastrar.css">
+    <link rel="stylesheet" href="responsivo_cadastrar.css">
+    <link rel="stylesheet" href="cadastrar.js">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+            <form onsubmit="return validarFormulario()" action="Adicionar_contatos.html" method="get">
+                <div class="label-float">
+                    <input type="email" id="usuario" name="email" placeholder="usuario@gmail.com" required>
+                    <label>Usuario</label>
+                </div>
+                <div class="label-float">
+                    <input type="text" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-00" required>
+                    <label>CPF:</label>
+                </div>
+                <div class="label-float">
+                    <input required type="tel" id="celular" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(00) 12345-6789">
+                    <label>Celular:</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                    <label>Senha</label>
+                    <button type="button" onclick="togglePassword()"></button><br><br>
+                </div>
+                
+                <div class="justify-center">
+                    <button type="submit">Cadastrar</button>
+                </div>
+                <div class="justify-center">
+                    <hr>
+                </div>
+            </form>
+        </div>
+
+        <script src="cadastrar.js"></script>
+
+    </div>
+</body>
+</html>
+
+

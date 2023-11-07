@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    display: block;
+    padding: 30px;
+    max-width: 600px; /* Define uma largura máxima para o cartão */
+    width: 80%;
+}
+
+::placeholder {
+    color: black;
+    text-align: left;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-bottom: 5%; /* Ajustei para 5% para melhor espaçamento */
+    margin-left: 0; /* Removi a margem esquerda para centralizar */
+    text-align: center; /* Centraliza o texto */
+}
+
+.label-float input {
+    width: 390px; /* Agora o input ocupará toda a largura do seu contêiner */
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 520px;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #4038a0;
+}
+
+.label-float label {
+    color: #fff;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 50%; /* Centraliza o label na metade da largura */
+    transform: translateX(-50%); /* Ajusta a posição para o centro */
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:valid+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
+
+button {
+    background-color: transparent;
+    border-color: #fff;
+    color: black;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease-out;
+    margin-left: auto; /* Muda a margem esquerda para 'auto' para alinhar à direita */
+    margin-right: auto; /* Muda a margem direita para 'auto' para alinhar à direita */
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+}
+
+.centralizar {
+    text-align: center;
+}
+
+#mensagem {
+    display: block;
+    margin: 0 auto;
+}
+
+#arquivo {
+    display: block;
+    margin: 0 auto;
+}

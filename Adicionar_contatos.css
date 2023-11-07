@@ -1,0 +1,77 @@
+
+.container {
+    text-align: center;
+    padding-left: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.add-contact input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(30% - 22px);
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.contact-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.contact-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icon-spacing {
+    margin-right: 8px; /* Espaçamento entre os ícones */
+}

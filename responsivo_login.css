@@ -1,0 +1,15 @@
+
+/* Estilo para android e IOS*/
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores (ex: smartphones) */
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+  }
+  
+  @media screen and (min-width: 1025px) {
+    /* Estilos para telas maiores (ex: desktops) */
+  }
+  

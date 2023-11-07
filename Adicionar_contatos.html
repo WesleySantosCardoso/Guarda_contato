@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsivo_conatos.css">
+    <link rel="stylesheet" href="Adicionar_contatos.css">
+    <link rel="stylesheet" href="menu_lateral.css">
+    <link rel="stylesheet" href="adicionar_contato.js">
+
+    <title>Adicionar Contatos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!-- Incio do menu lateral -->
+
+    <nav class="menu_lateral">
+
+        <div class="btn_expandir">
+
+            <i class="bi bi-list"></i>
+
+        </div>
+
+        <ul>
+            <li class="item_menu">
+                <a href="Adicionar_contatos.html">
+                    <span class="icon"><i class="bi bi-telephone-plus"></i></span>
+                    <span class="txt_link">Adicionar Contatos</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="Meu_perfil.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt_link">Perfil</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="suporte.html">
+                    <span class="icon"><i class="bi bi-chat-right-dots-fill"></i></span>
+                    <span class="txt_link"> Suporte </span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="login.html">
+                    <span class="icon"><i class="bi bi-door-closed"></i></span>
+                    <span class="txt_link"> Encerrar seção </span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Fim do menu lateral -->
+
+    <!-- Inicio do Adicionar Contatos -->
+
+    <div class="container">
+
+        <h1>Meus Contatos</h1> <br><br>
+
+        <div id="contact-list">
+
+            <!-- Os contatos serão adicionados aqui dinamicamente -->
+        </div>
+
+        <div class="add-contact">
+
+            <input type="text" id="name" placeholder="Nome" required><br><br>
+
+            <input type="tel" id="phone" placeholder="(00) 12345-6789" required><br><br>
+
+            <button id="add">Adicionar Contato</button>
+
+        </div>
+
+    </div>
+
+    <!-- Fim do adicionar contato -->
+
+    <script src="adicionar_contato.js"></script>
+
+</body>
+</html>
+

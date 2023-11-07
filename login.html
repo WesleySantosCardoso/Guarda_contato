@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="responsivo_login.css">
+    <link rel="stylesheet" href="login.js">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Entrar</h1>
+            <form onsubmit="return validarFormulario()" action="Adicionar_contatos.html">
+                <div class="label-float">
+                    <input type="email" id="usuario" name="email" placeholder="usuario@gmail.com">
+                    <label>Usuario</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" id="password" placeholder="Digite sua senha">
+                    <label>Senha</label>
+                    <button type="button" onclick="togglePassword()"></button><br><br>
+                </div>
+                <div class="justify-center">
+                    <button type="submit">Entrar</button>
+                </div>
+                <div class="justify-center">
+                    <hr>
+                </div>
+            </form>
+            <p>Não tem uma conta? <a href="Cadastrar.html">Cadastra-se</a></p>
+         </div>
+
+         <script src="login.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    background-color: gray;
+}
+
+/* Adicione um pouco de espaçamento entre os elementos */
+label, textarea, input[type="file"] {
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+
+
+/* Estilos gerais para o campo de entrada e textarea */
+.label-float input,
+.label-float textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+/* Ajuste de fonte para telas menores */
+@media screen and (max-width: 600px) {
+    .label-float input,
+    .label-float textarea {
+        font-size: 14px;
+    }
+}
+
+/* Ajuste de espaçamento e margens para telas menores */
+@media (max-width: 768px) {
+    .label-float input,
+    .label-float textarea {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ajuste de fonte para telas muito pequenas */
+@media (max-width: 480px) {
+    .label-float input,
+    .label-float textarea {
+        font-size: 12px;
+    }
+}
+
+/* Estilos específicos para o textarea 'mensagem' */
+#mensagem {
+    width: 100%;
+    height: 100px;
+    resize: none; /* Evita a redimensionamento do textarea pelo usuário */
+}
+
+/* Centraliza o conteúdo do formulário */
+.centralizar {
+    text-align: center;
+}
+
+/* Centraliza o botão de envio */
+.justify-center {
+    text-align: center;
+    margin-top: 20px; /* Adiciona um pouco de espaço acima do botão */
+}
+
+/* Ajustes adicionais para o botão de envio se necessário */
+@media (max-width: 768px) {
+    .justify-center button {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes adicionais para o botão de envio em telas muito pequenas */
+@media (max-width: 480px) {
+    .justify-center button {
+        font-size: 12px;
+    }
+}
+
+
+

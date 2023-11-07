@@ -1,0 +1,41 @@
+/*Corpo do site*/
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius:4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+
+/*Estilo para mobile*/
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores (ex: smartphones) */
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+  }
+  
+  @media screen and (min-width: 1025px) {
+    /* Estilos para telas maiores (ex: desktops) */
+  } 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Meu_perfil.css">
+    <link rel="stylesheet" href="responsivo_perfil.css">
+    <link rel="stylesheet" href="menu_lateral.css">
+    <link rel="stylesheet" href="Meu_perfil.js">
+    <title>Meu Perfil</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!--Incio do menu lateral-->
+
+    <nav class="menu_lateral">
+
+        <div class="btn_expandir">
+
+            <i class="bi bi-list"></i>
+
+        </div>
+
+        <ul>
+            <li class="item_menu">
+                <a href="Adicionar_contatos.html">
+                    <span class="icon"><i class="bi bi-telephone-plus"></i></span>
+                    <span class="txt_link">Adicionar Contatos</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="Meu_perfil.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt_link">Perfil</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="suporte.html">
+                    <span class="icon"><i class="bi bi-chat-right-dots-fill"></i></span>
+                    <span class="txt_link"> Suporte </span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="login.html">
+                    <span class="icon"><i class="bi bi-door-closed"></i></span>
+                    <span class="txt_link"> Encerrar seção </span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!--Fim do menu lateral-->
+
+    <!--Incio do perfil-->
+
+    <div class="container">
+
+        <div class="profile-container">
+
+            <h2 class="nome_usuario" id="username">Nome de Usuário</h2> <br><br>
+
+            <label for="profile-picture-input" class="upload-button">
+
+                Adicionar Foto <i class="bi bi-camera"></i>
+
+                <input type="file" id="profile-picture-input" accept="image/*" onchange="changeProfilePicture()" style="display:none;"> <!-- Alteração aqui: Adicionei o input dentro da label e o escondi com CSS -->
+
+            </label> <br><br>
+    
+            <img id="profile-picture" class="profile-picture" src="default-profile-picture.jpg" alt="Foto"> <br><br>
+    
+            <button id="change-username-button" onclick="changeUsername()">Alterar Nome</button>
+        </div>
+    
+    </div>
+
+    
+
+    <!--Fim do perfil-->
+    
+    <script src="Meu_perfil.js"></script>
+
+</body>
+</html>
+

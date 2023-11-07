@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte de Atendimento ao Cliente</title>
+    <link rel="stylesheet" href="Suporte.css">
+    <link rel="stylesheet" href="menu_lateral.css">
+    <link rel="stylesheet" href="respondivo_suporte.css">
+    <link rel="stylesheet" href="suporte.js">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <nav class="menu_lateral">
+
+        <div class="btn_expandir">
+
+            <i class="bi bi-list"></i>
+
+        </div>
+
+        <ul>
+            <li class="item_menu">
+                <a href="Adicionar_contatos.html">
+                    <span class="icon"><i class="bi bi-telephone-plus"></i></span>
+                    <span class="txt_link">Adicionar Contatos</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="Meu_perfil.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt_link">Perfil</span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="suporte.html">
+                    <span class="icon"><i class="bi bi-chat-right-dots-fill"></i></span>
+                    <span class="txt_link"> Suporte </span>
+                </a>
+            </li>
+
+            <li class="item_menu">
+                <a href="login.html">
+                    <span class="icon"><i class="bi bi-door-closed"></i></span>
+                    <span class="txt_link"> Encerrar seção </span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h4>Entre em Contato com o Suporte</h4> <br><br>
+            
+            <form id="contatoForm" enctype="multipart/form-data">
+
+                <!--Arrumar esta parte do codigo que não está sobrescrevendo!-->
+                <div class="label-float">
+                    <input type="text" id="usuario" name="usuario" placeholder="usuario@gmail.com " required>
+                    <label for="usuario">User:</label><br>
+                </div>
+
+                <div class="label-float">
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000 " required>
+                    <label for="telefone">Phone:</label><br>
+                </div>
+
+                <div class="centralizar">
+
+                <label for="mensagem">Reporte seu problema:</label><br>
+
+                <textarea id="mensagem" name="mensagem" rows="3" cols="40" placeholder="Digite o seu erro" required></textarea><br><br>
+                
+                <label for="arquivo">Adicione uma captura de tela</label>
+
+                <input type="file" id="arquivo" name="arquivo"><br><br>
+                
+                <div class="justify-center">
+
+                    <button type="button" onclick="enviarMensagem()">Enviar</button>
+
+                </div>
+                </div>
+
+            </form>
+
+            <script src="suporte.js"></script>
+
+        </div>
+    </div>
+
+</body>
+</html>
