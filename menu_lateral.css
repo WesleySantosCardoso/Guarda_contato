@@ -24,6 +24,7 @@
 /*Codigo menu lateral*/
 
 nav.menu_lateral {
+    z-index:9;
     width: 30px;
     height: 100%;
     background-color: #202020;
